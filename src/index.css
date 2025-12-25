@@ -1,0 +1,79 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #0b1520;
+  color: #f8fafc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #e2e8f0;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #cbd5f5;
+}
+
+.badge-tag {
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-card {
+  background: #111827;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  padding: 1.25rem;
+  height: 100%;
+}
+
+.project-img-placeholder {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-radius: 0.5rem;
+  height: 140px;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  padding: 24px 0;
+  border-top: 1px solid #1f2937;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.navbar-blur {
+  backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.92);
+  border-bottom: 1px solid #1f2937;
+}
+
+.contact-card {
+  background: #111827;
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  padding: 1.5rem;
+}
