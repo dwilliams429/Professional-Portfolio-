@@ -87,7 +87,7 @@ src/
 ---
 
 
-🔹 Deployment
+## 🔹 Deployment
 
 This project is designed to deploy cleanly on Vercel with zero configuration.
 
@@ -97,7 +97,7 @@ npm run build
 
 
 
-🔹 Purpose
+## 🔹 Purpose
 
 This portfolio represents how I approach real-world frontend and full-stack development:
 
@@ -113,7 +113,7 @@ It is intentionally built to reflect professional engineering standards, not jus
 
 
 
-🔹 Contact
+## 🔹 Contact
 
 📧 Email: williamsjr.dmoses@gmail.com
 
