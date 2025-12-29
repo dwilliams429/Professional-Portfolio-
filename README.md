@@ -64,6 +64,7 @@ This is **not a demo app** — it reflects how I build actual user-facing interf
 
 
 
+
 Each section is built as a focused component to keep the codebase modular, readable, and easy to extend.
 
 ---
