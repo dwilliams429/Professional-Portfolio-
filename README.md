@@ -81,4 +81,35 @@ src/
 ├─ App.css
 
 
+
+🔹 Deployment
+
+This project is designed to deploy cleanly on Vercel with zero configuration.
+
+npm run build
+
+
+🔹 Purpose
+
+This portfolio represents how I approach real-world frontend and full-stack development:
+
+Clean component boundaries
+
+Thoughtful UI spacing and hierarchy
+
+Code that is readable, maintainable, and extensible
+
+It is intentionally built to reflect professional engineering standards, not just coursework.
+
+
+🔹 Contact
+
+📧 Email: williamsjr.dmoses@gmail.com
+
+💼 GitHub: https://github.com/dwilliams429
+
+📍 Location: Houston, TX
+
+
+
 └─ index.js
