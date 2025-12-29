@@ -28,6 +28,9 @@ This is **not a demo app** — it reflects how I build actual user-facing interf
 
 ---
 
+
+
+
 ## 📁 Project Structure
 
    src/
@@ -59,7 +62,7 @@ This is **not a demo app** — it reflects how I build actual user-facing interf
 └─ index.js
 
 
----
+
 
 Each section is built as a focused component to keep the codebase modular, readable, and easy to extend.
 
@@ -68,8 +71,11 @@ Each section is built as a focused component to keep the codebase modular, reada
 ## ▶️ Run Locally
 
 git clone https://github.com/dwilliams429/Professional-Portfolio-.git
+
 cd Professional-Portfolio-
+
 npm install
+
 npm start
 
 
