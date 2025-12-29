@@ -77,9 +77,7 @@ The goal is not visual flash alone, but **clarity, usability, and professionalis
 
 ├─ App.js
 
-
 ├─ App.css
-
 
 └─ index.js
 
