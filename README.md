@@ -53,7 +53,7 @@ The goal is not visual flash alone, but **clarity, usability, and professionalis
 
 ## 🔹 Project Structure
 
-   src/
+    src/
 
 ├─ components/
 
