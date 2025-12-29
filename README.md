@@ -1,22 +1,55 @@
 # Professional Portfolio
 
-Production-ready software engineering portfolio built with React.
+Production-ready software engineering portfolio built with **React**, focused on real-world application structure, clean UI, and deployable features.
 
-## Features
-- Responsive modern UI
-- Project case studies with live demos
-- Resume download
-- Contact form with EmailJS
+This portfolio demonstrates how I design, build, and ship full-stack applications with attention to UX, maintainability, and production concerns.
 
-## Tech Stack
+---
+
+## 🔹 Live Demo
+👉 **[View Live Portfolio](https://your-vercel-url.vercel.app)**  
+*(Replace with your deployed link)*
+
+---
+
+## 🔹 Overview
+
+This project showcases:
+- Clean, modern UI with a glass-style design system
+- Structured React components
+- Scalable layout patterns
+- Production-minded code organization
+
+The goal is not visual flash alone, but **clarity, usability, and professionalism**.
+
+---
+
+## 🔹 Features
+
+- Responsive layout (desktop & mobile)
+- Sticky navigation with active section tracking
+- Modular component architecture
+- Reusable UI components
+- Clean typography and spacing system
+- Accessible form inputs and buttons
+- Production-ready project showcase cards
+
+---
+
+## 🔹 Tech Stack
+
+**Frontend**
 - React
-- CSS Variables
-- Node-style project structure
-- Deployed with Vercel
+- JavaScript (ES6+)
+- CSS (custom design system)
 
-## Live Demo
-(Deploy link here)
+**Tools**
+- Git & GitHub
+- Node.js
+- npm
+- Vercel (deployment)
 
-## Run Locally
-npm install  
-npm start
+---
+
+## 🔹 Project Structure
+
