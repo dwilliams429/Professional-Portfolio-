@@ -54,13 +54,21 @@ The goal is not visual flash alone, but **clarity, usability, and professionalis
 ## 🔹 Project Structure
 
 src/
+
 ├─ components/
+
 │ ├─ Hero.js
+
 │ ├─ About.js
+
 │ ├─ Skills.js
+
 │ ├─ Projects.js
+
 │ ├─ Resume.js
+
 │ ├─ Contact.js
+
 │ ├─ NavbarShell.js
 │ └─ Footer.js
 ├─ App.js
