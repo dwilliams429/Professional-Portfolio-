@@ -1,57 +1,34 @@
-# Professional Portfolio
+# 💼 Professional Portfolio
 
-Production-ready software engineering portfolio built with **React**, focused on real-world application structure, clean UI, and deployable features.
+Production-ready software engineering portfolio built with React.
 
-This portfolio demonstrates how I design, build, and ship full-stack applications with attention to UX, maintainability, and production concerns.
-
----
-
-## 🔹 Live Demo
-👉 **[View Live Portfolio](https://your-vercel-url.vercel.app)**  
-*(Replace with your deployed link)*
+This project showcases how I design, structure, and ship real-world frontend applications with clean architecture, reusable components, and thoughtful UI/UX decisions.
 
 ---
 
-## 🔹 Overview
+## 🔍 What This Project Demonstrates
 
-This project showcases:
-- Clean, modern UI with a glass-style design system
-- Structured React components
-- Scalable layout patterns
-- Production-minded code organization
+- 🧩 Component-based React architecture
+- 🎯 Clean, readable, and maintainable UI code
+- 🧠 Real-world layout and spacing decisions (not tutorial styling)
+- 📱 Responsive design for desktop and mobile
+- 🏗️ Clear separation of concerns across components
+- 🚀 Production mindset (polish, consistency, usability)
 
-The goal is not visual flash alone, but **clarity, usability, and professionalism**.
-
----
-
-## 🔹 Features
-
-- Responsive layout (desktop & mobile)
-- Sticky navigation with active section tracking
-- Modular component architecture
-- Reusable UI components
-- Clean typography and spacing system
-- Accessible form inputs and buttons
-- Production-ready project showcase cards
+This is **not a demo app** — it reflects how I build actual user-facing interfaces.
 
 ---
 
-## 🔹 Tech Stack
+## 🧱 Tech Stack
 
-**Frontend**
-- React
-- JavaScript (ES6+)
-- CSS (custom design system)
-
-**Tools**
-- Git & GitHub
-- Node.js
-- npm
-- Vercel (deployment)
+- ⚛️ **Frontend:** React, JavaScript
+- 🎨 **Styling:** Custom CSS (glass UI, spacing system, responsive layout)
+- 🛠️ **Tooling:** Create React App, GitHub
+- ☁️ **Deployment-ready:** Vercel-compatible build output
 
 ---
 
-## 🔹 Project Structure
+## 📁 Project Structure
 
    src/
 
@@ -83,6 +60,17 @@ The goal is not visual flash alone, but **clarity, usability, and professionalis
 
 
 ---
+
+Each section is built as a focused component to keep the codebase modular, readable, and easy to extend.
+
+---
+
+## ▶️ Run Locally
+
+git clone https://github.com/dwilliams429/Professional-Portfolio-.git
+cd Professional-Portfolio-
+npm install
+npm start
 
 
 ## 🔹 Deployment
@@ -118,6 +106,9 @@ It is intentionally built to reflect professional engineering standards, not jus
 💼 GitHub: https://github.com/dwilliams429
 
 📍 Location: Houston, TX
+
+---
+
 
 
 
