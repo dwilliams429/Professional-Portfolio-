@@ -81,7 +81,10 @@ src/
 ├─ App.css
 
 
+└─ index.js
 
+
+---
 
 
 🔹 Deployment
@@ -90,6 +93,7 @@ This project is designed to deploy cleanly on Vercel with zero configuration.
 
 npm run build
 
+---
 
 
 
@@ -105,6 +109,7 @@ Code that is readable, maintainable, and extensible
 
 It is intentionally built to reflect professional engineering standards, not just coursework.
 
+---
 
 
 
