@@ -73,7 +73,7 @@ npm install
 npm start
 
 
-## 🔹 Deployment
+## 🚀 Deployment
 
 This project is designed to deploy cleanly on Vercel with zero configuration.
 
@@ -99,13 +99,14 @@ It is intentionally built to reflect professional engineering standards, not jus
 
 
 
-## 🔹 Contact
-
+##  📫 Contact
 📧 Email: williamsjr.dmoses@gmail.com
 
-💼 GitHub: https://github.com/dwilliams429
+🐙 GitHub: https://github.com/dwilliams429
 
 📍 Location: Houston, TX
+
+
 
 ---
 
