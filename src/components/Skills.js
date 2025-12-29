@@ -1,41 +1,38 @@
-const skillGroups = [
-  {
-    title: "Frontend",
-    items: ["React", "JavaScript", "TypeScript (learning)", "Responsive UI", "Component architecture"],
-  },
-  {
-    title: "Backend",
-    items: ["Node.js", "Express", "REST APIs", "Auth fundamentals", "MongoDB (Mongoose)"],
-  },
-  {
-    title: "Tools",
-    items: ["Git/GitHub", "Vercel", "Debugging", "Clean code", "Basic testing mindset"],
-  },
-];
-
 export default function Skills() {
   return (
-    <section id="skills" className="section">
+    <section className="section" id="skills">
       <div className="section-head">
+        {/* Title + subtitle grouped like other sections */}
         <div>
-          <h2>Skills</h2>
-          <p className="muted">
-            Full-stack fundamentals focused on building real products end-to-end.
+          <h2 className="section-title">Skills</h2>
+          <p className="section-subtitle">
+            Full-stack fundamentals focused on shipping real products.
           </p>
         </div>
       </div>
 
       <div className="cards">
-        {skillGroups.map((g) => (
-          <div className="mini-card" key={g.title}>
-            <h3>{g.title}</h3>
-            <ul className="bullets small">
-              {g.items.map((i) => (
-                <li key={i}>{i}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <div className="mini-card">
+          <h3>Frontend</h3>
+          <p>
+            React, JavaScript, TypeScript (learning), responsive UI, component
+            architecture
+          </p>
+        </div>
+
+        <div className="mini-card">
+          <h3>Backend</h3>
+          <p>
+            Node.js, Express, REST APIs, auth fundamentals, MongoDB (Mongoose)
+          </p>
+        </div>
+
+        <div className="mini-card">
+          <h3>Tools</h3>
+          <p>
+            Git/GitHub, Vercel, debugging, clean code, basic testing mindset
+          </p>
+        </div>
       </div>
     </section>
   );

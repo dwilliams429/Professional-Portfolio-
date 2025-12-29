@@ -1,128 +1,119 @@
-import { useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
 
 export default function Contact() {
-  const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState({ type: "", message: "" });
+  const [form, setForm] = useState({
+    from_name: "",
+    reply_to: "",
+    subject: "",
+    message: "",
+  });
 
-  async function onSubmit(e) {
+  function onChange(e) {
+    setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
+  }
+
+  function onSubmit(e) {
     e.preventDefault();
-    setStatus({ type: "", message: "" });
-    setLoading(true);
-
-    try {
-      const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-      const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-      const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-
-      if (!serviceId || !templateId || !publicKey) {
-        throw new Error("Missing EmailJS keys in .env");
-      }
-
-      // IMPORTANT: your EmailJS template must include:
-      // from_name, reply_to, subject, message
-      await emailjs.sendForm(serviceId, templateId, e.currentTarget, { publicKey });
-
-      e.currentTarget.reset();
-      setStatus({ type: "success", message: "✅ Message sent! I’ll reply soon." });
-    } catch (err) {
-      setStatus({
-        type: "error",
-        message:
-          "❌ Failed to send. Check EmailJS keys + template variables: from_name, reply_to, subject, message.",
-      });
-    } finally {
-      setLoading(false);
-    }
+    alert("Hook up your EmailJS (or backend) send here.");
   }
 
   return (
-    <section id="contact" className="section contact-section">
-      <div className="contact-top">
-        <div>
-          <h2>Contact</h2>
-          <p className="muted">
-            Want to hire a full-stack developer? Send a message — I respond quickly.
-          </p>
-        </div>
-
-        <div className="contact-quick">
-          <a className="btn" href="mailto:williamsjr.dmoses@gmail.com">Email</a>
-          <a className="btn" href="https://github.com/williams429" target="_blank" rel="noreferrer">GitHub</a>
-          <a className="btn primary" href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-        </div>
+    <section className="section" id="contact">
+      <div className="section-head">
+        <h2 className="section-title">Contact</h2>
+        <p className="section-subtitle section-subtitle-muted">
+          Want to hire a full-stack developer? Send a message — I respond quickly.
+        </p>
       </div>
 
       <div className="contact-layout">
-        <form className="contact-form" onSubmit={onSubmit}>
-          <div className="row">
-            <label>
-              Name
-              <input name="from_name" placeholder="Your name" required />
-            </label>
+        {/* FORM CARD */}
+        <div className="contact-card">
+          <form onSubmit={onSubmit}>
+            <div className="contact-grid-two">
+              <div>
+                <label className="contact-label">Name</label>
+                <input
+                  name="from_name"
+                  value={form.from_name}
+                  onChange={onChange}
+                  placeholder="Your name"
+                />
+              </div>
 
-            <label>
-              Email
-              <input name="reply_to" type="email" placeholder="you@email.com" required />
-            </label>
-          </div>
+              <div>
+                <label className="contact-label">Email</label>
+                <input
+                  name="reply_to"
+                  value={form.reply_to}
+                  onChange={onChange}
+                  placeholder="you@email.com"
+                />
+              </div>
+            </div>
 
-          <label>
-            Subject
-            <input name="subject" placeholder="Job opportunity / project / question" />
-          </label>
+            <div className="contact-field">
+              <label className="contact-label">Subject</label>
+              <input
+                name="subject"
+                value={form.subject}
+                onChange={onChange}
+                placeholder="Job opportunity / project / question"
+              />
+            </div>
 
-          <label>
-            Message
-            <textarea
-              name="message"
-              placeholder="Tell me what you’re looking for and I’ll reply with next steps."
-              required
-            />
-          </label>
+            <div className="contact-field">
+              <label className="contact-label">Message</label>
+              <textarea
+                name="message"
+                value={form.message}
+                onChange={onChange}
+                placeholder="Tell me what you’re looking for and I’ll reply with next steps."
+                rows={7}
+              />
+            </div>
 
-          <div className="actions">
-            <button className="btn primary" type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Send Message"}
-            </button>
-            <a className="btn ghost" href="#projects">View Projects</a>
-          </div>
+            <div className="actions" style={{ marginTop: 12, alignItems: "center" }}>
+              <button type="submit" className="btn primary">
+                Send Message
+              </button>
+              <span style={{ fontSize: 12, color: "rgba(255,255,255,0.65)", fontWeight: 800 }}>
+                Usually replies within 24 hours
+              </span>
+            </div>
+          </form>
+        </div>
 
-          {/* Always reserved space so layout doesn't jump */}
-          <div className={`statusBox ${status.type ? "show" : ""} ${status.type}`}>
-            {status.message || " "}
-          </div>
-
-          <p className="hint">
-            EmailJS vars required: <b>from_name</b>, <b>reply_to</b>, <b>subject</b>, <b>message</b>
-          </p>
-        </form>
-
-        <aside className="contact-aside">
-          <h3>Details</h3>
-          <p className="muted">
+        {/* DETAILS CARD */}
+        <aside className="details-card">
+          <h3 style={{ margin: 0, fontSize: 20, letterSpacing: -0.2 }}>Details</h3>
+          <p style={{ marginTop: 10, marginBottom: 0, color: "rgba(255,255,255,0.78)", lineHeight: 1.7 }}>
             Best way to reach me is email. I’m open to full-stack / frontend / backend roles.
           </p>
 
-          <div className="contact-lines">
-            <div>
-              <div className="contact-label">Email</div>
-              <a className="link" href="mailto:williamsjr.dmoses@gmail.com">
-                williamsjr.dmoses@gmail.com
-              </a>
+          <div className="details-rows">
+            <div className="details-row">
+              <div className="details-label">Email</div>
+              <div className="details-value">
+                <a href="mailto:williamsjr.dmoses@gmail.com">williamsjr.dmoses@gmail.com</a>
+              </div>
             </div>
 
-            <div>
-              <div className="contact-label">GitHub</div>
-              <a className="link" href="https://github.com/williams429" target="_blank" rel="noreferrer">
-                github.com/williams429
-              </a>
+            <div className="details-row">
+              <div className="details-label">Location</div>
+              <div className="details-value">HOUSTON, TX</div>
             </div>
+          </div>
 
-            <div>
-              <div className="contact-label">Location</div>
-              <div className="muted">Corona, CA</div>
-            </div>
+          <div className="details-actions">
+            <a
+              className="btn outline"
+              href="https://github.com/dwilliams429"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
           </div>
         </aside>
       </div>
