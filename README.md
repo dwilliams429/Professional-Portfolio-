@@ -82,11 +82,15 @@ src/
 
 
 
+
+
 🔹 Deployment
 
 This project is designed to deploy cleanly on Vercel with zero configuration.
 
 npm run build
+
+
 
 
 🔹 Purpose
@@ -100,6 +104,8 @@ Thoughtful UI spacing and hierarchy
 Code that is readable, maintainable, and extensible
 
 It is intentionally built to reflect professional engineering standards, not just coursework.
+
+
 
 
 🔹 Contact
