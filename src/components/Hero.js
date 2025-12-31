@@ -8,9 +8,7 @@ export default function Hero() {
         <div className="hero-card">
           <div className="badge">Full-Stack Software Engineer</div>
 
-          <h1>
-            Full-Stack Software Engineer who ships production-ready web applications.
-          </h1>
+          <h1>Full-Stack Software Engineer who ships production-ready web applications.</h1>
 
           <p className="lead muted">
             I build scalable React frontends and Node/Express APIs with authentication,
@@ -24,8 +22,8 @@ export default function Hero() {
             <span className="pill">Deployed on Vercel</span>
           </div>
 
-          {/* ✅ spacing is handled by .meta margin-bottom in CSS */}
-          <div className="actions">
+          {/* LEFT CARD: align buttons with the start of the pill row */}
+          <div className="actions hero-actions">
             <a className="btn outline" href="#projects">
               View Projects
             </a>
@@ -48,9 +46,10 @@ export default function Hero() {
           </p>
 
           <p style={{ marginTop: 12, color: "rgba(255,255,255,.74)", lineHeight: 1.7 }}>
-            Bonus: 12+ years in aerospace/defense taught me discipline, documentation, and reliability.
+            <strong>Bonus:</strong> 12+ years in aerospace/defense taught me discipline, documentation, and reliability.
           </p>
 
+          {/* RIGHT CARD: keep buttons centered (do not change) */}
           <div className="actions" style={{ marginTop: 16 }}>
             <a className="btn outline" href="mailto:williamsjr.dmoses@gmail.com">
               Email

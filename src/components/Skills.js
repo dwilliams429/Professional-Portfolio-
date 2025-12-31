@@ -2,13 +2,10 @@ export default function Skills() {
   return (
     <section className="section" id="skills">
       <div className="section-head">
-        {/* Title + subtitle grouped like other sections */}
-        <div>
-          <h2 className="section-title">Skills</h2>
-          <p className="section-subtitle">
-            Full-stack fundamentals focused on shipping real products.
-          </p>
-        </div>
+        <h2 className="section-title">Skills</h2>
+        <p className="section-subtitle">
+          Full-stack fundamentals focused on shipping real products.
+        </p>
       </div>
 
       <div className="cards">
@@ -29,9 +26,7 @@ export default function Skills() {
 
         <div className="mini-card">
           <h3>Tools</h3>
-          <p>
-            Git/GitHub, Vercel, debugging, clean code, basic testing mindset
-          </p>
+          <p>Git/GitHub, Vercel, debugging, clean code, basic testing mindset</p>
         </div>
       </div>
     </section>

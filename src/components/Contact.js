@@ -1,110 +1,76 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Contact() {
-  const [form, setForm] = useState({
-    from_name: "",
-    reply_to: "",
-    subject: "",
-    message: "",
-  });
-
-  function onChange(e) {
-    setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
-  }
-
-  function onSubmit(e) {
-    e.preventDefault();
-    alert("Hook up your EmailJS (or backend) send here.");
-  }
-
   return (
     <section className="section" id="contact">
       <div className="section-head">
         <h2 className="section-title">Contact</h2>
         <p className="section-subtitle section-subtitle-muted">
-          Want to hire a full-stack developer? Send a message — I respond quickly.
+          Let’s connect — email, GitHub, or send a quick message.
         </p>
       </div>
 
       <div className="contact-layout">
-        {/* FORM CARD */}
+        {/* LEFT: FORM */}
         <div className="contact-card">
-          <form onSubmit={onSubmit}>
+          <form>
             <div className="contact-grid-two">
-              <div>
+              <div className="contact-field">
                 <label className="contact-label">Name</label>
-                <input
-                  name="from_name"
-                  value={form.from_name}
-                  onChange={onChange}
-                  placeholder="Your name"
-                />
+                <input placeholder="Your name" />
               </div>
 
-              <div>
+              <div className="contact-field">
                 <label className="contact-label">Email</label>
-                <input
-                  name="reply_to"
-                  value={form.reply_to}
-                  onChange={onChange}
-                  placeholder="you@email.com"
-                />
+                <input placeholder="you@example.com" />
               </div>
-            </div>
-
-            <div className="contact-field">
-              <label className="contact-label">Subject</label>
-              <input
-                name="subject"
-                value={form.subject}
-                onChange={onChange}
-                placeholder="Job opportunity / project / question"
-              />
             </div>
 
             <div className="contact-field">
               <label className="contact-label">Message</label>
-              <textarea
-                name="message"
-                value={form.message}
-                onChange={onChange}
-                placeholder="Tell me what you’re looking for and I’ll reply with next steps."
-                rows={7}
-              />
+              <textarea placeholder="Tell me what you're working on..." />
             </div>
 
-            <div className="actions" style={{ marginTop: 12, alignItems: "center" }}>
-              <button type="submit" className="btn primary">
+            <div style={{ marginTop: 18 }}>
+              <button className="btn primary" type="submit">
                 Send Message
               </button>
-              <span style={{ fontSize: 12, color: "rgba(255,255,255,0.65)", fontWeight: 800 }}>
-                Usually replies within 24 hours
-              </span>
+
+              <p className="muted" style={{ marginTop: 10, fontSize: 13 }}>
+                Usually responds within 24hrs
+              </p>
             </div>
           </form>
         </div>
 
-        {/* DETAILS CARD */}
-        <aside className="details-card">
-          <h3 style={{ margin: 0, fontSize: 20, letterSpacing: -0.2 }}>Details</h3>
-          <p style={{ marginTop: 10, marginBottom: 0, color: "rgba(255,255,255,0.78)", lineHeight: 1.7 }}>
-            Best way to reach me is email. I’m open to full-stack / frontend / backend roles.
+        {/* RIGHT: DETAILS */}
+        <div className="details-card">
+          <h3 className="details-title">Details</h3>
+
+          {/* ✅ Two-line description */}
+          <p className="details-desc">
+            The best way to reach me is by email.
+          </p>
+          <p className="details-desc">
+            I’m open to full-stack · frontend · backend roles.
           </p>
 
           <div className="details-rows">
             <div className="details-row">
               <div className="details-label">Email</div>
               <div className="details-value">
-                <a href="mailto:williamsjr.dmoses@gmail.com">williamsjr.dmoses@gmail.com</a>
+                <a href="mailto:williamsjr.dmoses@gmail.com">
+                  williamsjr.dmoses@gmail.com
+                </a>
               </div>
             </div>
-
             <div className="details-row">
               <div className="details-label">Location</div>
-              <div className="details-value">HOUSTON, TX</div>
+              <div className="details-value">Houston, TX</div>
             </div>
           </div>
 
+          {/* ✅ GitHub button restored */}
           <div className="details-actions">
             <a
               className="btn outline"
@@ -112,10 +78,10 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              GitHub
+              View GitHub
             </a>
           </div>
-        </aside>
+        </div>
       </div>
     </section>
   );
