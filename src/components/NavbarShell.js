@@ -75,9 +75,7 @@ export default function NavbarShell() {
           <a
             href="#resume"
             onClick={onNavClick("resume")}
-            className={`nav-link nav-cta ${activeId === "resume" ? "is-active" : ""}`}
-          >
-            Resume
+            className={`nav-link nav-cta ${activeId === "resume" ? "is-active" : ""}`}>
           </a>
         </nav>
       </div>
